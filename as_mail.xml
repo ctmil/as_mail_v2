@@ -19,8 +19,8 @@
             <field name="model">as.mail.message</field>
             <field name="arch" type="xml">
 		<field name="model" position="after">
-			<field name="po_id" attrs="{'invisible':[('po_id', '!=', False)]}"/>
-			<field name="request_id" attrs="{'invisible':[('request_id', '!=', False)]}"/>
+			<field name="po_id" />
+			<field name="request_id" />
 		</field>
             </field>
         </record>
