@@ -12,6 +12,18 @@
 		</field>
             </field>
         </record>
+
+        <record model="ir.ui.view" id="as_mail_message_form_v2">
+            <field name="name">as.mail.message.form.v2</field>
+            <field name="inherit_id" ref="as_mail.as_mail_message_form"/>
+            <field name="model">as.mail.message</field>
+            <field name="arch" type="xml">
+		<field name="model" position="after">
+			<field name="po_id" attrs="{'invisible':[('po_id', '!=', False)]}"/>
+			<field name="request_id" attrs="{'invisible':[('request_id', '!=', False)]}"/>
+		</field>
+            </field>
+        </record>
 	  
    </data>
 </openerp>
